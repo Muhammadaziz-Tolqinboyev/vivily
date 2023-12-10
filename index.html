@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="midterm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <img src="./logo.jpg" alt="ERROR" class="animate__animated animate__flip">
+            <div class="nav">
+                <a href="/">
+                    HOME
+                </a>
+                <a href="/artists">
+                    ARTISTS
+                </a>
+                <a href="/about">
+                    ABOUT
+                </a>
+                <a href="/publishing">
+                    PUBLISHING
+                </a>
+                <!-- http://cookingvinylmusic.com/ -->
+                <a href="/partners">
+                    PARTNERS
+                </a>
+                <a href="/careers">
+                    CAREERS
+                </a>
+                <a href="/contact">
+                    CONTACT
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="main">
+
+        <div class="content">
+            <ul>
+                <li class="letter_g">G</li>
+            </ul>
+            <ul>
+                <li>W</li>
+            </ul>
+            <ul>
+                <li>A</li>
+            </ul>
+            <ul>
+                <li>L</li>
+            </ul>
+            <ul>
+                <li>I</li>
+            </ul>
+            <ul>
+                <li>A</li>
+            </ul>
+            <ul>
+                <li style="color: rgba(255, 255, 255, 0.574);">_</li>
+            </ul>
+            <ul>
+                <li>R</li>
+            </ul>
+            <ul>
+                <li>E</li>
+            </ul>
+            <ul>
+                <li>C</li>
+            </ul><img src="./cycle.png" alt="Error">
+            <ul>
+                <li>R</li>
+            </ul>
+            <ul>
+                <li>D</li>
+            </ul>
+            <ul>
+                <li class="letter_s">S</li>
+            </ul>
+        </div>
+        <div class="conteyner">
+            <div class="quote_content">
+                <h4>Remember the first time you went to a show and saw your favorite
+                    band. You wore their shirt, and sang every word. You didn't know
+                    anything about scene politics, haircuts, or what was cool.
+                    All you knew was that this music made you feel different
+                    from anyone you shared a locker with. Someone finally
+                    understood you. This is what music is about.</h4>
+            </div>
+
+            <div id="audio-container">
+                <audio id="audio-player">
+                    <source src="./junior.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="player">
+                <img id="audio-trigger" src="./fon.webp" alt="Rasm">
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var audio = document.getElementById('audio-player');
+                    var audioContainer = document.getElementById('audio-container');
+                    var audioTrigger = document.getElementById('audio-trigger');
+
+                    audioTrigger.addEventListener('click', function () {
+                        if (audio.paused) {
+                            audio.play();
+                        } else {
+                            audio.pause();
+                        }
+                    });
+
+                    // Rasm ustida musiqa tinglovini chiqarish
+                    document.addEventListener('mousemove', function (e) {
+                        var x = e.clientX;
+                        var y = e.clientY;
+
+                        if (x > 100 && x < 300 && y > 100 && y < 300) {
+                            audioContainer.style.display = 'block';
+                        } else {
+                            audioContainer.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+        <div class="title">
+            <div class="TITLES">
+                <h1>History</h1>
+            </div>
+        </div>
+        <div class="content electrical">
+            <div class="img_of_inf">
+                <img src="./the_first_record.jpeg">
+            </div>
+            <div class="inf_about_us">
+                <div class="inf_about_us1">
+                    <p class="paragraph-text">The first disc recordsEmile Berliner with disc record gramophone.
+                        The first commercially sold disc records were created by Emile Berliner in the 1880s.
+                        Emile Berliner improved the quality of recordings while his manufacturing associate Eldridge R.
+                        Johnson,who owned a machine shop in Camden,New Jersey,
+                        eventually improved the mechanism of the gramophone with a spring motor and a speed regulating
+                        governor,
+                        resulting in a sound quality equal to Edison's cylinders.
+                        Abandoning Berliner's "Gramophone" trademark for legal reasons in the United States,
+                        Johnson's and Berliner's separate companies reorganized in 1901 to form the Victor Talking
+                        Machine Company in Camden, New Jersey,
+                        whose products would come to dominate the market for several decades.
+                        Berliner's Montreal factory, which became the Canadian branch of RCA Victor, still exists.
+                        There is a dedicated museum in Montreal for Berliner (Musée des ondes Emile Berliner).
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons"><a href="#" class="button">Learn More!</a></div>
+        </div>
+
+
+
+
+        <div class="title">
+            <div class="TITLES">
+                <h1>Early speeds</h1>
+            </div>
+        </div>
+        <div class="content electrical">
+            <div class="img_of_inf2">
+                <img src="./Early_speeds.jpeg">
+            </div>
+            <div class="inf_about_us">
+                <div class="inf_about_us1">
+                    <p class="paragraph-text">Early disc recordings were produced in a variety of speeds ranging
+                        from 60 to 130 rpm,
+                        and a variety of sizes. As early as 1894,
+                        Emile Berliner's United States Gramophone Company was selling single-sided 7-inch discs with an
+                        advertised standard speed of "about 70 rpm".
+                        One standard audio recording handbook describes speed regulators, or governors,
+                        as being part of a wave of improvement introduced rapidly after 1897.
+                        A picture of a hand-cranked 1898 Berliner Gramophone shows a governor,
+                        and says that spring drives had replaced hand drives. It notes that:
+                        The speed regulator was furnished with an indicator that showed the speed when the machine was
+                        running so that the records,
+                        on reproduction, could be revolved at exactly the same speed...The literature does not disclose
+                        why 78 rpm was chosen for the phonograph industry,
+                        apparently this just happened to be the speed created by one of the early machines and,
+                        for no other reason continued to be used.
+                        In 1912, the Gramophone Company set 78 rpm as their recording standard,
+                        based on the average of recordings they had been releasing at the time,
+                        and started selling players whose governors had a nominal speed of 78 rpm.
+                        By 1925, 78 rpm was becoming standardized across the industry. However,
+                        the exact speed differed between places with alternating current electricity
+                        supply at 60 hertz (cycles per second, Hz) and those at 50 Hz.
+                        Where the mains supply was 60 Hz, the actual speed was 78.26 rpm:
+                        that of a 60 Hz stroboscope illuminating 92-bar calibration markings.
+                        Where it was 50 Hz, it was 77.92 rpm: that of a 50 Hz stroboscope
+                        illuminating 77-bar calibration markings.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons"><a href="#" class="button">Learn More!</a></div>
+        </div>
+
+
+
+
+        <div class="title">
+            <div class="TITLES">
+                <h1>Electrical recording</h1>
+            </div>
+        </div>
+        <div class="content electrical">
+            <div class="img_of_inf2">
+                <img src="./electrical_recording.jpg">
+            </div>
+            <div class="inf_about_us">
+                <div class="inf_about_us1">
+                    <p class="paragraph-text">During the first half of the 1920s,
+                        engineers at Western Electric, as well as independent inventors such as Orlando Marsh,
+                        developed technology for capturing sound with a microphone,
+                        amplifying it with vacuum tubes (known as valves in the UK),
+                        and then using the amplified signal to drive an electromechanical recording head.
+                        Western Electric's innovations resulted in a broader and smoother frequency response,
+                        which produced a dramatically fuller, clearer and more natural-sounding recording.
+                        Soft or distant sounds that were previously impossible to record could now be captured.
+                        Volume was now limited only by the groove spacing on the record and the amplification of the
+                        playback device.
+                        Victor and Columbia licensed the new electrical system from Western Electric and recorded the
+                        first
+                        electrical discs during the spring of 1925. The first electrically recorded Victor Red Seal
+                        record was Chopin's "Impromptus" and Schubert's "Litanei" performed by pianist Alfred Cortot at
+                        Victor's studios in Camden, New Jersey.
+                        A 1926 Wanamaker's ad in The New York Times offers records "by the latest Victor process of
+                        electrical recording". It was recognized as a breakthrough; in 1930, a Times music critic
+                        stated:
+                        ... the time has come for serious musical criticism to take account of performances of great
+                        music reproduced by means of the records. To claim that the records have succeeded in exact and
+                        complete reproduction of all details of symphonic or operatic performances ... would be
+                        extravagant ... [but] the article of today is so far in advance of the old machines as hardly to
+                        admit classification under the same name. Electrical recording and reproduction have combined to
+                        retain vitality and color in recitals by proxy.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons"><a href="#" class="button">Learn More!</a></div>
+        </div>
+    </section>
+
+
+    <section class="work" id="work">
+        <div class="title reveal">
+            <div class="TITLES">
+                <h1>Our vinyls for sale</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card reveal">
+                <div id="audio-container2">
+                    <audio id="audio-player2">
+                        <source src="./Clifford_Brown.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <div class="card-img">
+                    <img id="audio-trigger2" src="./fon4.webp" alt="Rasm">
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audio-player2');
+                        var audioContainer = document.getElementById('audio-container2');
+                        var audioTrigger = document.getElementById('audio-trigger2');
+
+                        audioTrigger.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                            } else {
+                                audio.pause();
+                            }
+                        });
+
+                        // Rasm ustida musiqa tinglovini chiqarish
+                        document.addEventListener('mousemove', function (e) {
+                            var x = e.clientX;
+                            var y = e.clientY;
+
+                            if (x > 100 && x < 300 && y > 100 && y < 300) {
+                                audioContainer.style.display = 'block';
+                            } else {
+                                audioContainer.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+            </div>
+            <div class="card reveal">
+
+                <div id="audio-container3">
+                    <audio id="audio-player3">
+                        <source src="./Soulville (Remastered 2016).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <div class="card-img">
+                    <img id="audio-trigger3" src="./fon6.webp" alt="Rasm">
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audio-player3');
+                        var audioContainer = document.getElementById('audio-container3');
+                        var audioTrigger = document.getElementById('audio-trigger3');
+
+                        audioTrigger.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                            } else {
+                                audio.pause();
+                            }
+                        });
+
+                        // Rasm ustida musiqa tinglovini chiqarish
+                        document.addEventListener('mousemove', function (e) {
+                            var x = e.clientX;
+                            var y = e.clientY;
+
+                            if (x > 100 && x < 300 && y > 100 && y < 300) {
+                                audioContainer.style.display = 'block';
+                            } else {
+                                audioContainer.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+            </div>
+            <div class="card reveal">
+                <div id="audio-container4">
+                    <audio id="audio-player4">
+                        <source src="./Liquid_Swords.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="card-img">
+                    <img id="audio-trigger4" src="./fon3.webp" alt="">
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audio-player4');
+                        var audioContainer = document.getElementById('audio-container4');
+                        var audioTrigger = document.getElementById('audio-trigger4');
+
+                        audioTrigger.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                            } else {
+                                audio.pause();
+                            }
+                        });
+
+                        // Rasm ustida musiqa tinglovini chiqarish
+                        document.addEventListener('mousemove', function (e) {
+                            var x = e.clientX;
+                            var y = e.clientY;
+
+                            if (x > 100 && x < 300 && y > 100 && y < 300) {
+                                audioContainer.style.display = 'block';
+                            } else {
+                                audioContainer.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+
+            </div>
+            <div class="card reveal">
+                <div id="audio-container5">
+                    <audio id="audio-player5">
+                        <source src="./Godsmack.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="card-img">
+                    <img id="audio-trigger5" src="./fon2.webp" alt="">
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audio-player5');
+                        var audioContainer = document.getElementById('audio-container5');
+                        var audioTrigger = document.getElementById('audio-trigger5');
+
+                        audioTrigger.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                            } else {
+                                audio.pause();
+                            }
+                        });
+
+                        // Rasm ustida musiqa tinglovini chiqarish
+                        document.addEventListener('mousemove', function (e) {
+                            var x = e.clientX;
+                            var y = e.clientY;
+
+                            if (x > 100 && x < 300 && y > 100 && y < 300) {
+                                audioContainer.style.display = 'block';
+                            } else {
+                                audioContainer.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+            </div>
+            <div class="card reveal">
+                <div id="audio-container6">
+                    <audio id="audio-player6">
+                        <source src="./Sheryl_Crow.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="card-img">
+                    <img id="audio-trigger6" src="./fon1.webp" alt="">
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audio-player6');
+                        var audioContainer = document.getElementById('audio-container6');
+                        var audioTrigger = document.getElementById('audio-trigger6');
+
+                        audioTrigger.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                            } else {
+                                audio.pause();
+                            }
+                        });
+
+                        // Rasm ustida musiqa tinglovini chiqarish
+                        document.addEventListener('mousemove', function (e) {
+                            var x = e.clientX;
+                            var y = e.clientY;
+
+                            if (x > 100 && x < 300 && y > 100 && y < 300) {
+                                audioContainer.style.display = 'block';
+                            } else {
+                                audioContainer.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+            </div>
+            <div class="card reveal">
+                <div id="audio-container7">
+                    <audio id="audio-player7">
+                        <source src="./Olivia_Totally_Hot_VINYL.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="card-img">
+                    <img id="audio-trigger7" src="./fon5.webp" alt="">
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var audio = document.getElementById('audio-player7');
+                        var audioContainer = document.getElementById('audio-container7');
+                        var audioTrigger = document.getElementById('audio-trigger7');
+
+                        audioTrigger.addEventListener('click', function () {
+                            if (audio.paused) {
+                                audio.play();
+                            } else {
+                                audio.pause();
+                            }
+                        });
+
+                        // Rasm ustida musiqa tinglovini chiqarish
+                        document.addEventListener('mousemove', function (e) {
+                            var x = e.clientX;
+                            var y = e.clientY;
+
+                            if (x > 100 && x < 300 && y > 100 && y < 300) {
+                                audioContainer.style.display = 'block';
+                            } else {
+                                audioContainer.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+            </div>
+            <div class="title reveal">
+                <a href="#" class="button_see">See All</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title reveal">
+            <div class="TITLES">
+                <h1>Contact Me</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Address</h3>
+                        <span>UZBEKISTAN<br>TASHKENT</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone number</h3>
+                        <span>+998 99 191 52 51</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="email">
+                        <h3>Email Address</h3>
+                        <span>matt.ance505@gmail.com</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="email">
+                        <h3>Website</h3>
+                        <span>MyGwalias.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-form reveal">
+                    <h3>Send Message</h3>
+                    <div class="input-box">
+                        <input type="text" placeholder="Name...">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Email...">
+                    </div>
+                    <div class="input-box">
+                        <textarea rows="8" cols="80" placeholder="Message..."></textarea>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="send-button" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer_conteyner">
+            <div class="first_footer_inf">
+                <ul>
+                    <li class="letter_g">G</li>
+                </ul>
+                <ul>
+                    <li>W</li>
+                </ul>
+                <ul>
+                    <li>A</li>
+                </ul>
+                <ul>
+                    <li>L</li>
+                </ul>
+                <ul>
+                    <li>I</li>
+                </ul>
+                <ul>
+                    <li>A</li>
+                </ul>
+                <ul>
+                    <li style="color: rgba(255, 255, 255, 0.11);">_</li>
+                </ul>
+                <ul>
+                    <li>R</li>
+                </ul>
+                <ul>
+                    <li>E</li>
+                </ul>
+                <ul>
+                    <li>C</li>
+                </ul><img src="./cycle.png" alt="Error">
+                <ul>
+                    <li>R</li>
+                </ul>
+                <ul>
+                    <li>D</li>
+                </ul>
+                <ul>
+                    <li class="letter_s">S</li>
+                </ul>
+            </div>
+            <div class="second_footer_inf">
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-globe"></i>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
